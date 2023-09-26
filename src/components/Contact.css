@@ -1,0 +1,80 @@
+#contact {
+    background: linear-gradient(to bottom left, #1c1c1c, #272727);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  input, textarea {
+    display: block;
+    max-width: 400px; /* Set max-width for a more condensed look */
+    width: 100%;
+    padding: 12px;
+    margin: 10px auto; /* Center the fields */
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding and border are included in the width */
+  }
+  
+  textarea {
+    height: 100px; /* Increase height for message box */
+  }
+  
+  button {
+    background-color: #ffffff;
+    color: #272727;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1c1c1c;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .social-icons a:hover {
+    color: #b75fd7;
+  }
+  
+
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.737); /* Lighter text color for better visibility */
+    opacity: 1; /* Required for Firefox */
+  }
+  
+
+ /* Existing styles */
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #272727;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#scrollToTop:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1c1c1c;
+}
+
+  
