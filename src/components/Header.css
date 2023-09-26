@@ -32,3 +32,17 @@
 .nav-item:hover {
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 768px) {
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.7rem;
+  }
