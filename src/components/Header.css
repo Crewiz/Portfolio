@@ -1,11 +1,9 @@
-/* Main Header */
 .main-header {
   background-color: #242424;
   padding: 1rem;
   box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-/* Site Title */
 .site-title {
   margin: 0;
   font-size: 1.8rem;
@@ -13,14 +11,12 @@
   letter-spacing: 1px;
 }
 
-/* Navigation Container */
 .nav-container {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
 }
 
-/* Navigation Items */
 .nav-item {
   text-decoration: none;
   color: #B0B0B0;

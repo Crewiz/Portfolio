@@ -1,19 +1,17 @@
-/* Portfolio Section */
 #portfolio {
   background: linear-gradient(to bottom left, #1c1c1c, #272727);
   padding: 2rem;
   color: #F1F1F1;
   transition: all 0.3s ease;
 }
-/* Projects Wrapper */
+
 .projects-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* 3 columns for 2x3 grid */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   transition: all 0.3s ease;
 }
 
-/* Individual Project Card */
 .project-card {
   background: #333;
   border-radius: 8px;
@@ -21,24 +19,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  height: auto; /* Allow dynamic height */
+  min-height: 400px; /* Increase minimum height to accommodate text and icons */
   transition: all 0.3s ease;
-  
 }
-
 
 .project-card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Project Image */
 .project-img {
   width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
-/* Project Description */
 .project-description {
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -46,17 +41,41 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
-
+  flex-grow: 1;
 }
 
+.app-store-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap; 
+}
 
+.store-icon {
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.store-icon:hover {
+  transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
   .projects-wrapper {
     grid-template-columns: 1fr;
   }
+
+  .app-store-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
   .project-description {
     font-size: 0.8rem;
     line-height: 1.2;
